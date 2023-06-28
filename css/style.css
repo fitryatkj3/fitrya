@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    margin: inherit;
+}
+.medsos {
+    padding:5px 0;
+    background-color: rgb(11, 109, 11);
+}
+.medsos ul li {
+    display: inline-block;
+    color: white;
+    margin-right: 10px;
+
+}
+
+.container {
+    width:80%;
+    margin:0  auto;
+}
+.container::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color:rgb(25, 102, 25)   
+}
+header ul {
+    float: right;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a {
+    padding: 25px 20px;
+    display: inline-block;
+}
+header ul li a:hover {
+    background-color: rgb(28, 112, 28);
+    color: white;
+}
+.active {
+    background-color: rgb(28, 112, 28);
+    color: white;
+}
+header img {
+    margin-top: 0.5%;
+}
+    
+
+
+
+
+.banner {
+    height: 70vh;        
+    background-image: url('../img/banner\ pohon-crop.jpg');
+    background-size: cover;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:  rgba(28, 112, 28, 0.6);
+    z-index: 1;
+}
+.shit {
+    color:beige;
+    z-index: 2;
+    padding: 20px 25px;
+    text-align: center;
+    background-color: rgba(22, 94, 36, 0.452);
+    border: 3PX solid beige;
+}
+.shit h2 {
+    font-size: 55px;
+}
+.shit h3 {
+    margin: 10px 0 40px;
+    font-size: 20px;
+}
+
+
+section {
+    padding: 50px;
+}
+
+section h1 {
+    text-align: center;
+    padding: 20px 0px;
+    color:  rgba(28, 112, 28, 0.6);
+    margin-bottom: 20px;
+}
+.about {
+    color: 666;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+
+ /* about */
+.about img {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+footer {
+    padding: 30px;
+    background-color: #858b85;
+    color: white;
+    text-align: center;
+}
+
+.label {
+    background-color: rgb(28, 112, 28);
+    color: white;
+}
+
+/* product */
+.catalog h1 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    color: black;
+}
+
+.our-prod{
+    flex-basis: 37%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.our-prod h2{
+   width: 100%;
+   font-weight: 500;
+   color: #fff;
+   font-size: 26px;
+   bottom: 10px;
+   left: 50%;
+   transform: translateX(-50%);
+   position: absolute;
+   opacity: 0;
+   transition: 1s;
+}
+
+
+.layer {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align:center;
+    transition: 0,5s;
+}
+.layer:hover {
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+.our-prod:hover h2{
+    bottom: 49%;
+    opacity: 1;
+}
+.kayu h1{
+    color: black;
+}
+.jenis {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    text-align: left;
+    display: inline-block;
+    width: 400px;
+    height: 450px;
+    margin-left: 5px;
+    background-color: beige;
+}
+.jenis img {
+    width: 100%;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+}
+.jenis p {
+    font-size: small;
+    margin-top: 10px;
+    color: #858b85;
+}
+.jenis h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
